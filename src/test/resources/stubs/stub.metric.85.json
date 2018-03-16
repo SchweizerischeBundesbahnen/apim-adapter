@@ -1,0 +1,21 @@
+{
+  "metric": {
+    "id": 85,
+    "name": "hits",
+    "system_name": "hits",
+    "friendly_name": "Hits",
+    "unit": "hit",
+    "created_at": "2017-09-06T20:12:34+02:00",
+    "updated_at": "2017-09-06T20:12:34+02:00",
+    "links": [
+      {
+        "rel": "service",
+        "href": "https://3scale-admin.int.app.ose.sbb-cloud.net/admin/api/services/34"
+      },
+      {
+        "rel": "self",
+        "href": "https://3scale-admin.int.app.ose.sbb-cloud.net/admin/api/services/34/metrics/85"
+      }
+    ]
+  }
+}

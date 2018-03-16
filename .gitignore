@@ -1,0 +1,16 @@
+bin
+target
+.metadata
+.settings
+.classpath
+.project
+.idea
+*.iml
+*.log
+*.lck
+*-lock.json
+
+node_modules/
+dist/
+
+/.idea/

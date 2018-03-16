@@ -1,0 +1,15 @@
+﻿backend:
+  useHttps: true
+  port: 443
+  host: "xxx"
+  token: "xxx"
+admin:
+  useHttps: true
+  host: "xxx"
+  token: "xxx"
+adapter:
+  syncRateInSeconds: 15
+  configReloadInSeconds: 60
+  serviceId: xx
+tls:
+  truststore: /truststore.jks
