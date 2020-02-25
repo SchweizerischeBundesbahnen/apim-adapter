@@ -1,0 +1,29 @@
+apim:
+    backend:
+        use-https: true
+        port: 443
+        host: "backend-3scale.int.app.ose.sbb-aws.net"
+        token: "<override>"
+    admin:
+        use-https: true
+        host: "api-management-int.app.sbb.ch"
+        token: "<override>"
+    tokenissuer:
+      - url-pattern: https://sso-int.sbb.ch/auth/realms/(SBB_Public)
+    adapter:
+        sync-rate-in-seconds: 15
+        config-reload-in-seconds: 60
+        service-id: 8
+        production-mode: false
+        exclude-filter-methods:
+        report-response-code: false
+    monitoring:
+        level: standard
+        push:
+            host: http://pushgateway-monitoring.int.app.ose.sbb-aws.net:80
+            interval-in-seconds: 60
+            enabled: true
+        id: overrideWithEnv
+        namespace: overrideWithEnv
+    cache:
+        location: DISABLED

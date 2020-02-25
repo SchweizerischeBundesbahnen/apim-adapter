@@ -1,0 +1,20 @@
+apim:
+  admin:
+    host: api-management-dev.app.sbb.ch
+  backend:
+    port: 443
+    host: backend-3scale.dev.app.ose.sbb-aws.net
+
+  adapter:
+    productionmode: false
+
+  tokenissuer:
+    - url-pattern: https://sso-dev.sbb.ch/auth/realms/(SBB_Public)
+
+  monitoring:
+    push.host: http://pushgateway-monitoring.dev.app.ose.sbb-aws.net
+
+  cache.location: DISABLED
+
+logging:
+  level.ROOT: info

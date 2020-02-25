@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ch.sbb.integration.api.adapter.springboot.config.ApimConfigurationSupport, \
+ch.sbb.integration.api.adapter.springboot.config.ApimAdapterAutoConfiguration
