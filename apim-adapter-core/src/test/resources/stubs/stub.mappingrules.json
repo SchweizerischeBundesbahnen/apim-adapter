@@ -1,0 +1,204 @@
+{
+  "mapping_rules": [
+    {
+      "mapping_rule": {
+        "id": 736,
+        "metric_id": 85,
+        "pattern": "/v1/",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-09T12:44:39+01:00",
+        "updated_at": "2018-02-15T11:01:51+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/736"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    },
+    {
+      "mapping_rule": {
+        "id": 739,
+        "metric_id": 85,
+        "pattern": "/v1/",
+        "http_method": "POST",
+        "delta": 1,
+        "created_at": "2018-02-15T11:01:51+01:00",
+        "updated_at": "2018-02-15T11:01:51+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/739"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    },
+    {
+      "mapping_rule": {
+        "id": 744,
+        "metric_id": 364,
+        "pattern": "/v1/locations/{foo}/noworries",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-17T12:10:33+01:00",
+        "updated_at": "2018-02-20T20:46:37+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/744"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    },
+    {
+      "mapping_rule": {
+        "id": 745,
+        "metric_id": 360,
+        "pattern": "/v1/locations",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-20T20:46:37+01:00",
+        "updated_at": "2018-02-22T09:58:08+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/745"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    },
+    {
+      "mapping_rule": {
+        "id": 737,
+        "metric_id": 361,
+        "pattern": "/v1/{env}/swisspass/{ver}/SwissPassService",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-20T20:46:37+01:00",
+        "updated_at": "2018-02-22T09:58:08+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/745"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }    
+    },
+    {
+      "mapping_rule": {
+        "id": 747,
+        "metric_id": 362,
+        "pattern": "/v1/swisspass/{ver}/SwissPassService",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-20T20:46:37+01:00",
+        "updated_at": "2018-02-22T09:58:08+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/745"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    },
+    {
+      "mapping_rule": {
+        "id": 747,
+        "metric_id": 363,
+        "pattern": "/v1/swisspass/{ver}/SwissPassService$",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-20T20:46:37+01:00",
+        "updated_at": "2018-02-22T09:58:08+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/745"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    },
+    {
+      "mapping_rule": {
+        "id": 747,
+        "metric_id": 363,
+        "pattern": "/v2/swisspass/{ver}/SwissPassService?foo={foo}&bar={bar}",
+        "http_method": "GET",
+        "delta": 1,
+        "created_at": "2018-02-20T20:46:37+01:00",
+        "updated_at": "2018-02-22T09:58:08+01:00",
+        "links": [
+          {
+            "rel": "self",
+            "href": "/admin/api/services/34/proxy/mapping_rules/745"
+          },
+          {
+            "rel": "service",
+            "href": "/admin/api/services/34"
+          },
+          {
+            "rel": "proxy",
+            "href": "/admin/api/services/34/proxy"
+          }
+        ]
+      }
+    }
+  ]
+}

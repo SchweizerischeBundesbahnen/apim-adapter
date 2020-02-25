@@ -1,0 +1,27 @@
+# Admin component to run health and readiness checks .
+# During the startup a new Undertow server is started and configured with the following options
+---
+# Enable Admin features flag.
+enableAdmin: true
+
+#ip address of the admin endpoints
+ip: 127.0.0.1
+
+# Http port (Do not forget to change this in the docker file)
+httpPort:  3000
+
+# mapping for the health endpoint
+healthMapping: /health
+
+# mapping for the readiness endpoint
+readinessMapping: /ready
+
+# mapping for the shutdown endpoint --> calling this sets the pod to unready
+shutdownMapping: /shutdown
+
+# prometheus endpoint
+prometheusMapping: /metrics
+
+ioThreads: 2
+
+workerThreads: 4

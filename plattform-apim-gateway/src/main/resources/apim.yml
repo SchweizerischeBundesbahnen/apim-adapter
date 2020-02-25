@@ -1,0 +1,8 @@
+# API Management with 3Scale Backend configuration in light framework.
+---
+# Enable API Management features flag.
+enableApiManagement: true
+
+# The limit of distinguished endpoints (request paths) regarding monitoring (counts, response times).
+# the lower it is set, the cheaper monitoring is (data volume for prometheus)
+monitoringEndpointLimit: 20

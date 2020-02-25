@@ -1,0 +1,40 @@
+# Proxy Configuration
+---
+# Connections per thread to the target servers
+connectionsPerThread: 20
+
+# Get number of cached connections above which are closed after the time to live
+softMaxConnections: 10
+
+# Get the maximum number of cached (idle) connections per thread
+maxCachedConnections: 20
+
+# Get the maximum number of requests which can be queued if there are no connections available
+maxQueueSize: 0
+
+# Get the time to live for idle connections.
+ttl: -1
+
+# The amount of time in seconds that we should wait before re-testing a problem server
+problemServerRetry: 10
+
+# Max request time in milliseconds before timeout
+maxRequestTime: 10000
+
+# Rewrite host header to match the target server
+rewriteHostHeader: true
+
+# How many times the Gateway tries to reconnect after a failed connection. Default is 1
+# Increasing this number increases how long a request takes if the backend is unavailable
+maxConnectionRetries: 1
+
+# Rewrite rules
+# Note: By default the proxy passes the requests to the default host configured in the API-Management.
+# If rewrite is omitted, location will be used in the request to the backend. If proxyPass is omitted,
+# request will be rewritten using the rewrite pattern and sent to the host configured in API-Management.
+# Important: The settings above are applied for each backend host individually.
+
+#rules:
+#  - location: ^/some/(.*)/location/match$
+#    rewrite: /the/$1/new/location
+#    proxyPass: http://my.backend.location

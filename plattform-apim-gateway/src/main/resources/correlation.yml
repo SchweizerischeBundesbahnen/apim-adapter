@@ -1,0 +1,13 @@
+# Extracts or generated correlation ID for in the Request Conext
+---
+# Enable the handler
+enableCorrelation: true
+
+# The name of the header field with the correlation ID.
+# if the header is not set, a correlation ID will be created and forwarded in the defined header
+CorrelationIdHeaderName: X-Correlation-Id
+
+# The name of the header field with a business accosiatet ID.
+# if no value is set no value will be logged or generated
+BusinessIdHeaderName: X-Process-Id
+

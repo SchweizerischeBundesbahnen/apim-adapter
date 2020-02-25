@@ -1,0 +1,30 @@
+apim:
+  backend:
+    use-https: false
+    port: 8099
+    host: "localhost"
+    token: "e543cdb69458e8c4ac41639e88d8ea285774ce165895c813792331a059e087d9"
+  admin:
+    use-https: false
+    host: "localhost:8099"
+    token: "dc26d2b1fc2038e1f747629e7d5608685e7b91b827107d1bcab6b6799dc7e809"
+  tokenissuer:
+    - url-pattern: http://localhost:8099/auth/realms/(SBB_Public)
+  adapter:
+    sync-rate-in-seconds: 5
+    config-reload-in-seconds: 5
+    service-id: 34
+    production-mode: true
+    exclude-filter-methods:
+  monitoring:
+    #minimal, standard, all
+    level: none
+    push:
+      host: https://pushgateway-monitoring.dev.app.ose.sbb-aws.net:443
+      interval-in-seconds: 30
+      enabled: false
+    id: mypodName-1-1
+    namespace: test-local
+
+  cache:
+    location: target/tmp/unit-test

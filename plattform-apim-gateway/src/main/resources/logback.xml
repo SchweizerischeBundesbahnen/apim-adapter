@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d] [%t] %-5p %c - corid=%X{X-B3-TraceId:-} businessId=%X{X-Business-Id:-} %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.jboss.resteasy.resteasy_jaxrs.i18n" level="WARN"/>
+    <logger name="ch.sbb.integration.api.gateway.handler.LoggingExchangeCompletionListener"
+            level="${APIM_GATEWAY_REQUEST_LOG_LEVEL:-INFO}"/>
+
+    <root level="${APIM_GATEWAY_LOG_LEVEL:-WARN}">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>
