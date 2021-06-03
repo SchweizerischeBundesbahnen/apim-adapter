@@ -11,7 +11,7 @@
     <artifactId>apim-adapter-core</artifactId>
 
     <properties>
-        <version.resteasy>3.5.0.Final</version.resteasy>
+        <version.resteasy>4.5.7.Final</version.resteasy>
         <version.java-jwt>3.9.0</version.java-jwt>
 
         <!-- make sure prometheus client version matches the on from prometheus-jmx-collector -->
